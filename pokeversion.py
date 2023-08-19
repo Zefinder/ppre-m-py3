@@ -22,6 +22,7 @@ def get():
         realgame = gameids[game]
     else:
         realgame = "Unknown"
+    gamename = "Unknown"
     for p in pairs:
         if realgame in p:
             gamename = p[0]

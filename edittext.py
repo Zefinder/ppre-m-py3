@@ -39,7 +39,7 @@ class EditText(QMainWindow):
         self.menus["file"].addAction(self.menutasks["newtext"])
         QObject.connect(self.menutasks["newtext"],
             QtCore.SIGNAL("triggered()"), self.newText)
-        for f in files[config.project["versioninfo"][0]]:
+        for f in files[config.project["version"][0]]:
             self.menutasks["opentext_"+f] = QAction(self.menus["file"])
             self.menutasks["opentext_"+f].setText(
                 translations["menu_opentext"]+": "+f)

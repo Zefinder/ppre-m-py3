@@ -9,7 +9,8 @@ from PyQt4 import QtCore, QtGui
 from compat import *
 import config
 from language import translations
-import ndstool, xdelta3
+import xdelta3
+from ntr import ndstool
 import pokeversion
 
 import edittext, editpokemon, editmoves, filebrowser

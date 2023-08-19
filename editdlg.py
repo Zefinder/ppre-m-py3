@@ -4,7 +4,7 @@ from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 from PyQt4 import QtCore, QtGui
 import struct
-from string import letters
+from string import ascii_letters as letters
 
 import config
 import pokeversion
@@ -135,8 +135,7 @@ class EditDlg(QMainWindow):
         self.dirty = False
         self.currentchoice = 0
         game = config.project["versioninfo"][0]
-        self.textfname = config.project["directory"]+"fs"+pokeversion.textfiles[
-            game]["Main"]
+        self.textfname = config.project["directory"]+"fs"+pokeversion.textfiles[game]["Main"]
         self.textnarc = narc.NARC(open(self.textfname, "rb").read())
         if pokeversion.gens[game] == 4:
             self.gettext = txt.gen4get

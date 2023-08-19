@@ -7,7 +7,7 @@ from PyQt4 import QtCore, QtGui
 from editdlg import EditDlg, EditWidget
 
 import config
-from language import translate
+from language import translate, translations
 import pokeversion
 from nds import narc, txt
 from nds.fmt import movedatafmt

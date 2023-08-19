@@ -1,8 +1,8 @@
-import narc
+from nds import narc
 import struct, re
-import cStringIO as StringIO
-import unicodeparser
-from binary16 import binaryreader, binarywriter
+from io import StringIO
+from nds import unicodeparser
+from nds.binary16 import binaryreader, binarywriter
 
 usedflags = "c"
 

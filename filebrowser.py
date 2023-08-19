@@ -6,7 +6,7 @@ from PyQt4 import QtCore, QtGui
 import os
 
 import config
-from language import translate
+from language import translate, translations
 from nds import narc
 
 def getFullPath(location):

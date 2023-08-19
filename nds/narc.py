@@ -7,7 +7,7 @@ class BTAF:
             self.magic = rawdata[:4]
             self.header = unpack("II", rawdata[4:12])
             if self.magic != "BTAF":
-                raise NameError, "BTAF tag not found"
+                raise NameError("BTAF tag not found")
         else:
             self.magic = "BTAF"
             self.header = (12, 0)
@@ -32,7 +32,7 @@ class BTNF:
             self.magic = rawdata[:4]
             self.header = unpack("IIHH", rawdata[4:0x10])
             if self.magic != "BTNF":
-                raise NameError, "BTNF tag not found"
+                raise NameError("BTNF tag not found")
         else:
             self.magic = "BTNF"
             self.header = (16, 4, 0, 1)
@@ -47,7 +47,7 @@ class GMIF:
             self.magic = rawdata[:4]
             self.size = unpack("I", rawdata[4:8])[0]
             if self.magic != "GMIF":
-                raise NameError, "GMIF tag not found"         
+                raise NameError("GMIF tag not found")         
         else:
             self.magic = "GMIF"
             self.size = 8
@@ -79,7 +79,7 @@ class NARC:
         if len(rawdata)>0:
             self.magic = rawdata[:4]
             if self.magic != "NARC":
-                raise NameError, "NARC tag not found"
+                raise NameError("NARC tag not found")
             self.header = unpack("IIHH", rawdata[4:16])
         else:
             self.magic = "NARC"
