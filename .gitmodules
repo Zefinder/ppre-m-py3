@@ -1,0 +1,3 @@
+[submodule "python3-compile-engine"]
+	path = python3-compile-engine
+	url = git@github.com:Zefinder/python3-compile-engine.git
