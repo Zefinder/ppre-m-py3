@@ -1,3 +1,6 @@
 [submodule "python3-compile-engine"]
 	path = python3-compile-engine
 	url = git@github.com:Zefinder/python3-compile-engine.git
+[submodule "rawdb"]
+	path = rawdb
+	url = https://github.com/minghu6/rawdb.git
