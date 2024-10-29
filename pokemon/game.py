@@ -3,7 +3,7 @@ import functools
 import json
 import os
 
-from compression import blz
+from rawdb.common import blz
 from ctr import ctrtool
 from ntr import ndstool
 from ctr.header_bin import HeaderBin as CTRHeaderBin
@@ -11,8 +11,9 @@ from ntr.header_bin import HeaderBin as NTRHeaderBin
 from ntr.narc import NARC
 from ntr.overlay import OverlayTable
 from ctr.garc import GARC
-from util import cached_property, subclasses
-from util import BinaryIO
+from rawdb.util import subclasses
+from rawdb.util.cache import cached_property
+from rawdb.util.io import BinaryIO
 from generic import Editable
 
 GAME_CODES = {
