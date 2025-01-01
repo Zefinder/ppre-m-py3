@@ -5,3 +5,9 @@ static
 local
 ndstool
 custom*
+.classpath
+.project
+.vscode
+/target/
+.settings
+bin
